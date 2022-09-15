@@ -1,4 +1,7 @@
 # Nomeando Variaveis | Exemplo 1
+import statistics
+import math
+import datetime
 Laranja, Melão, Limão = 1, 2, 3
 print(Laranja, Melão, Limão, '\n')
 
@@ -163,3 +166,49 @@ print(Lista_Alfabetica_02, '\n')
 
 # Indetificar o Index do elemtno na lista
 print(Lista_Alfabetica_02.index('L'), '\n')
+
+""" DATAS """
+# Dia de Hoje
+Dia_Hoje = datetime.datetime.today().date()
+# Aumentar dias ou diminuir
+print(f'Somando 30 dias, {Dia_Hoje + datetime.timedelta(days = 30)}')
+print(f'Diminuindo 30 dias, {Dia_Hoje - datetime.timedelta(days = 30)}')
+
+""" Pacote Math """
+
+# Minino e Maximo
+tupla2 = (10, 15, 5, 8, 20)
+print(min(tupla2))
+print(max(tupla2))
+
+# ABS  retorna o valor absoluto (positivo) do número especificado
+print(abs(-7.25))
+
+# Retorna a potencia (seria o msm que 3 * 3 * 3 * 3)
+print(pow(3, 4))
+
+# Raiz quadrada
+Raiz_Quadrada = math.sqrt(81)
+print(Raiz_Quadrada)
+
+# Arrendondamento
+
+# Arredonda um número para cima até o número inteiro mais próximo
+print(math.ceil(1.4))
+
+# Arredonda um número para baixo até o número inteiro mais próximo
+print(math.floor(1.4))
+
+# retorna o numero de PI
+print(math.pi)
+
+""" Pacote Statistcs """
+# Retirando a média
+Media = statistics.mean([1, 2, 3, 4, 4])
+print(f'A media seria: {Media} \n')
+
+Mediana = statistics.median([1, 2, 3, 4, 4])
+print(f'A mediana seria: {Mediana} \n')
+
+Moda = statistics.mode([1, 2, 3, 4, 4])
+print(f'A moda seria: {Moda}')
